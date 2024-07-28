@@ -3,6 +3,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Dashboard } from "./dashboard";
 import { Login } from "./login";
+import { Signup } from "./signup";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" Component={Login} />
+          <Route path="/signup" Component={Signup} />
           <Route path="/dashboard" Component={Dashboard} />
         </Routes>
       </Router>
