@@ -8,7 +8,7 @@ const userCollection = require('../schema')
 const router = express.Router()
 
 
-router.post('/register', (req, res) => {
+router.post('/register', async (req, res) => {
     try {
         const newUser = req.body
 
