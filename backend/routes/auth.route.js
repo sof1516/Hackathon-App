@@ -1,9 +1,9 @@
-const jwt = require('jsonwebtoken')
-const express = require('express')
-const bcrypt = require('bcryptjs')
+import jwt from 'jsonwebtoken';
+import express from 'express';
+import bcrypt from 'bcryptjs';
 
 //import schema
-const userCollection = require('../schema')
+import userCollection from '../schema.js';
 
 const router = express.Router()
 
@@ -38,12 +38,12 @@ router.post('/register', async (req, res) => {
         //if needed we can generate token here
         const createUser = userCollection.create(newUser)
 
-        res.status(200).json({
-            firstName: newUser.firstName,
-            lastName: newUser.lastName,
-            email: newUser.email,
-            id: createUser.id
-        })
+        // res.status(200).json({
+        //     firstName: newUser.firstName,
+        //     lastName: newUser.lastName,
+        //     email: newUser.email,
+        //     id: createUser.id
+        // })
         //or we can just return
         res.status(200).json({
             message: "Successfully registered"
@@ -54,4 +54,15 @@ router.post('/register', async (req, res) => {
         //if necessary send it through a response
     }
 } )
+
+
+// router.post('/login', async (req, res) => {
+//     try {
+//         const returningUser = 
+//     } catch (error) {
+        
+//     }
+// })
+
+export default  router ;
 

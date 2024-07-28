@@ -1,9 +1,9 @@
-const mongoose = require('mongoose')
+import mongoose from 'mongoose';
 
 
-const connectMongoDB = async () => {
+export const connectMongoDB = async () => {
     try {
-        const connection = await mongoose.connect('mongodb://localhost:27017/....')
+        const connection = await mongoose.connect('mongodb://localhost:27017/tracker')
 
         if (connection) 
         {
@@ -14,4 +14,3 @@ const connectMongoDB = async () => {
     }
 }
 
-module.exports = connectMongoDB;
