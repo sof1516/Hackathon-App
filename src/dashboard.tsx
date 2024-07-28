@@ -379,21 +379,21 @@ export function Dashboard() {
               <TabsContent value="week">
                 <Card x-chunk="dashboard-05-chunk-3">
                   <CardHeader className="px-7">
-                    <CardTitle>Orders</CardTitle>
+                    <CardTitle>Transaction Log</CardTitle>
                     <CardDescription>
-                      Recent orders from your store.
+                      Recent transitions you have made.
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <Table>
                       <TableHeader>
                         <TableRow>
-                          <TableHead>Customer</TableHead>
+                          <TableHead>Title</TableHead>
                           <TableHead className="hidden sm:table-cell">
                             Type
                           </TableHead>
                           <TableHead className="hidden sm:table-cell">
-                            Status
+                            Credit/Depit
                           </TableHead>
                           <TableHead className="hidden md:table-cell">
                             Date
