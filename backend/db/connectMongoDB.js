@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 
 const connectMongoDB = async () => {
     try {
-        const connection = mongoose.connect('mongodb://localhost:27017/....')
+        const connection = await mongoose.connect('mongodb://localhost:27017/....')
 
         if (connection) 
         {
@@ -14,4 +14,4 @@ const connectMongoDB = async () => {
     }
 }
 
-module.exports = connectMongoDB
+module.exports = connectMongoDB;
