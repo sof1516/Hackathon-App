@@ -10,8 +10,8 @@ function App() {
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <Router>
         <Routes>
-          <Route path="/" Component={Login} />
-          <Route path="/signup" Component={Signup} />
+          <Route path="/login" Component={Login} />
+          <Route path="/" Component={Signup} />
           <Route path="/dashboard" Component={Dashboard} />
         </Routes>
       </Router>

@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 export function Login() {
   const navigate = useNavigate();
   return (
-    <div className="w-full lg:grid lg:min-h-[600px] lg:grid-cols-2 xl:min-h-[800px]">
+    <div className="w-full lg:grid lg:min-h-[950px] lg:grid-cols-2 xl:min-h-[950px]">
       <div className="flex items-center justify-center py-12">
         <div className="mx-auto grid w-[350px] gap-6">
           <div className="grid gap-2 text-center">
@@ -29,14 +29,15 @@ export function Login() {
             <div className="grid gap-2">
               <div className="flex items-center">
                 <Label htmlFor="password">Password</Label>
-                <a
+                
+              </div>
+              <Input id="password" type="password" required />
+              <a
                   href="/forgot-password"
                   className="ml-auto inline-block text-sm underline"
                 >
                   Forgot your password?
                 </a>
-              </div>
-              <Input id="password" type="password" required />
             </div>
             <Button onClick={() => navigate('dashboard')} type="submit" className="w-full">
               Login
@@ -47,7 +48,7 @@ export function Login() {
           </div>
           <div className="mt-4 text-center text-sm">
             Don&apos;t have an account?{" "}
-            <Link to="/signup" className="underline">
+            <Link to="/" className="underline">
               Sign up
             </Link>
           </div>
@@ -55,7 +56,7 @@ export function Login() {
       </div>
       <div className="hidden bg-muted lg:block">
         <img
-          src="/login.jpg"
+          src="/login.jpeg"
           alt="Image"
           width="1920"
           height="1080"

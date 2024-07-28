@@ -298,7 +298,7 @@ export function Dashboard() {
                   <CardDescription className="max-w-lg text-balance leading-relaxed">
                     Total Savings
                   </CardDescription>
-                  <CardTitle>$36,429</CardTitle>
+                  <CardTitle className="text-8xl">$36,429</CardTitle>
                 </CardHeader>
                 <CardFooter>
                   <Button>Add New Record</Button>
